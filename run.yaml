@@ -1,0 +1,16 @@
+container:
+  image: "pogema-stochastic:latest"
+  command: 'python eval.py '
+  
+  tty: True
+  environment:
+    - "OMP_NUM_THREADS=1"
+    - "MKL_NUM_THREADS=1"
+    - "NVIDIA_VISIBLE_DEVICES=0"
+code:
+  folder: "../"
+  ignore: [".git"]
+  forward_environment_keys: ["WANDB_API_KEY"]
+host_config:
+  runtime: nvidia
+  shm_size: '2g'
