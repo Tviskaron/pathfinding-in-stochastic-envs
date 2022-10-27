@@ -1,4 +1,4 @@
-# Pathfinding in Stochastic Environments: Learning vs Planning
+# Pathfinding in Stochastic Environments: Reinforcement Learning vs Planning
 
 Thie repo provides official code implementation for [Pathfinding in Stochastic Environments: Learning vs Planning paper](https://peerj.com/articles/cs-1056/). 
 We study and evaluate two orthogonal approaches to tackle the problem of reaching a goal under such conditions: planning and learning. Within planning, an agent constantly replans and updates the path based on the history of the observations using a search-based planner. Within learning, an agent asynchronously learns to optimize a policy function using recurrent neural networks using APPO algorithm.
